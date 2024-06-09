@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useState } from 'react'
+import Ejercicio4 from './pages/Ejercicio4'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [showEjercicio4, setShowEjercicio4] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowEjercicio4(!showEjercicio4);
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <section className="seccion-ejercicio4">
+      <article className="contenido-4">
+        <h1>Ejercicios React</h1>
+        <button onClick={handleButtonClick}>
+          {showEjercicio4 ? 'Ocultar Ejercicio 4' : 'Mostrar Ejercicio 4'}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+        {showEjercicio4 && <Ejercicio4 />}
+      </article>
+    </section>
+  );
 }
 
 export default App
