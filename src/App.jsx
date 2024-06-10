@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import './App.css';
 import Ejercicio2 from './pages/Ejercicio2';
@@ -7,6 +8,8 @@ function App() {
 
   const handleButtonClick = () => {
     setShowEjercicio1(!showEjercicio2);
+=======
+
   }
 
   return (
@@ -14,9 +17,11 @@ function App() {
       <section>
         <h1>Ejercicios React</h1>
         <button onClick={handleButtonClick}>
+
           {showEjercicio2 ? 'Ocultar Ejercicio 2' : 'Mostrar Ejercicio 2'}
         </button>
         {showEjercicio2 && <Ejercicio2 />}
+
       </section>
     </>
   );
