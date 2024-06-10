@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Ejercicio1 = (props) => {
@@ -6,4 +7,8 @@ const Ejercicio1 = (props) => {
   );
 };
 
+
 export default Ejercicio1
+
+export default Ejercicio1;
+
