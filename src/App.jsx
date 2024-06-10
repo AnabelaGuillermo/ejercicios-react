@@ -1,31 +1,26 @@
 
-import React, { useState } from 'react';
-import './App.css';
-import Ejercicio3 from './pages/Ejercicio3';
+import React, { useState } from 'react'
+import Ejercicio4 from './pages/Ejercicio4'
+import './App.css'
 
 function App() {
-  const [showEjercicio3, setShowEjercicio1] = useState(false);
+  const [showEjercicio4, setShowEjercicio4] = useState(false);
 
   const handleButtonClick = () => {
-
-    setShowEjercicio1(!showEjercicio3);
-
-    setShowEjercicio1(!showEjercicio2);
-
+    setShowEjercicio4(!showEjercicio4);
   }
 
   return (
-    <>
-      <section>
+    <section className="seccion-ejercicio4">
+      <article className="contenido-4">
         <h1>Ejercicios React</h1>
         <button onClick={handleButtonClick}>
-
-          {showEjercicio3 ? 'Ocultar Ejercicio 3' : 'Mostrar Ejercicio 3'}
+          {showEjercicio4 ? 'Ocultar Ejercicio 4' : 'Mostrar Ejercicio 4'}
         </button>
-        {showEjercicio3 && <Ejercicio3 />}
+        {showEjercicio4 && <Ejercicio4 />}
+      </article>
+    </section>
 
-      </section>
-    </>
   );
 }
 
