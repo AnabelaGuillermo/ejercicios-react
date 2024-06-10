@@ -1,11 +1,12 @@
-import React from 'react'
 
-/* Crear una aplicación web con un componente que muestre en pantalla el mensaje “Hello World”. */
+import React from 'react';
 
-const Ejercicio1 = () => {
+const Ejercicio1 = (props) => {
   return (
-    <h1>Hello world!</h1>
-  )
-}
+    <h1>Hello {props.name}!</h1>
+  );
+};
 
-export default Ejercicio1
+export default Ejercicio1;
+=======
+
