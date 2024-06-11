@@ -3,13 +3,15 @@ import Ejercicio1 from './components/Ejercicio1';
 import Ejercicio2 from './components/Ejercicio2';
 import Ejercicio3 from './components/Ejercicio3';
 import Ejercicio4 from './components/Ejercicio4';
+import Ejercicio5 from './components/Ejercicio5';
 import './App.css';
 
 function App() {
   const [showEjercicio1, setShowEjercicio1] = useState(false);
   const [showEjercicio2, setShowEjercicio2] = useState(false);
   const [showEjercicio3, setShowEjercicio3] = useState(false);
-  const [showEjercicio4, setShowEjercicio4] = useState(false);
+  const [showEjercicio4, setShowEjercicio4] = useState(false); 
+  const [showEjercicio5, setShowEjercicio5] = useState(false); 
 
   const handleButtonClick1 = () => {
     setShowEjercicio1(!showEjercicio1);
@@ -25,6 +27,10 @@ function App() {
 
   const handleButtonClick4 = () => {
     setShowEjercicio4(!showEjercicio4);
+  };
+
+  const handleButtonClick5 = () => {
+    setShowEjercicio5(!showEjercicio5);
   };
 
   return (
@@ -54,6 +60,12 @@ function App() {
             {showEjercicio4 ? 'Ocultar Ejercicio 4' : 'Mostrar Ejercicio 4'}
           </button>
           {showEjercicio4 && <Ejercicio4 />}
+        </div>
+        <div>
+          <button onClick={handleButtonClick5}>
+            {showEjercicio5 ? 'Ocultar Ejercicio 5' : 'Mostrar Ejercicio 5'}
+          </button>
+          {showEjercicio5 && <Ejercicio5 />}
         </div>
       </article>
     </section>
