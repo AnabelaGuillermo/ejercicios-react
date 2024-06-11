@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.seccion-ejercicio4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido4 {
+  text-align: center;
+}
