@@ -50,3 +50,22 @@
 .contenido4 {
   text-align: center;
 }
+
+.empleado-avatar img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-left: 50px;
+}
+
+.empleado-row {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.empleado-list {
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  overflow: hidden;
+  object-fit: cover;
+}
