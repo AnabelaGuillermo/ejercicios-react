@@ -1,0 +1,30 @@
+.seccion-Ejercicio9 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.formulario label,
+.citas h2 {
+  margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cita {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cita p {
+  margin: 5px 0;
+}
+
+button {
+  cursor: pointer;
+}
