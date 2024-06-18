@@ -1,0 +1,41 @@
+.card-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.color-card {
+  background-color: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+
+.boton-eliminar {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.seccion-colores {
+  text-align: center;
+  margin-top: 50px;
+
+  & input {
+    margin-right: 10px;
+  }
+}
+
+.article-map {
+  margin-top: 20px;
+}
+
+.toUpper-coloresGuardados {
+ margin-top: 5px;
+}
