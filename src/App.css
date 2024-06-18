@@ -128,3 +128,7 @@ input[type="email"]:focus {
     color: white;
   }
 }
+
+footer {
+  bottom: 0;
+}
