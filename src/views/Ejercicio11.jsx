@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const apiKey = "f2fe25f4db364a9d90d07816d9b8589b";
+const apiKey = import.meta.env.VITE_API_KEY_EJERCICIO_11;
 
 const Ejercicio11 = () => {
   const [categorias, setCategorias] = useState([]);
